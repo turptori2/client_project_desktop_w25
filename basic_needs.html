@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <img src="images/UMSI_logo_marketing_u.jpg" alt="UMSI Logo" width="300">
+        <img src="images/UMSI_logo_marketing_u.jpg" alt="UMSI Logo" width="350">
         <br><a href="#main" class="skip">Skip to Main Content</a>
         <h1>Basic Needs</h1>
         <nav>
@@ -70,9 +70,14 @@
     </main>
     <footer>
         <img src="images/UMSI_signature_vertical_informal_allblue.png" alt="UMSI Logo" width="50">
-        <p>© 2025 University of Michigan | School of Information </p>
+        <p> © <span id="year"></span> University of Michigan | School of Information </p>
         <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Support Resources</a>
     </footer>
+
+    <!-- Javascript to get the current year -->
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 
 </body>
 
