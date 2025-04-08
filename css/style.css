@@ -1,0 +1,678 @@
+/* Hide skip button */
+.skip {
+  position: absolute;
+  top: -50px;
+}
+
+/* show skip to main button */
+.skip:focus {
+  top: 35px;
+  height: 35px;
+  background-color: white;
+}
+
+.active {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* button settings */
+
+.button {
+  font-size: .80rem;
+  background-color: #FFCB05;
+  color: #00274C;
+  border-radius: 3px;
+  padding: 10px 24px;
+  margin: 4% 0 5% 0;
+  align-content: flex-end;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.button a {
+  text-decoration: none;
+}
+
+/* add button hover */
+.button:hover {
+  border-width: 3.5px;
+}
+
+
+body {
+  background-color: #00274C;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-size: cover;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  padding-bottom: 2%;
+}
+
+
+nav > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px;
+  text-align: center;
+  column-gap: 10px;
+  align-content: space-between;
+  align-items: start;
+  justify-content: center;
+  /* make sure image on Ac Dev page doesn't overlap */
+  z-index: 1;
+  position: relative;
+  margin: 10px 0 0 0;
+}
+
+nav > ul a {
+  color: #00274C;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #00274C;
+  font-weight: bold;
+  text-align: center;
+  padding: 3% 0% 3% 0%;
+}
+
+/* style welcome to grad success message */
+section p:first-of-type {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 70px 20px 70px;
+    font-size: 1em;
+}
+
+h2 {
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.resources {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* grid items */
+.resources > div {
+  display: grid;
+  background-color: white;
+  color: darkblue;
+  justify-items: center;
+  align-items: start;
+  align-content: space-between;
+  padding: 5px 3px 0 3px;
+  border: 1px solid #FFCB05;
+  text-wrap: wrap;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* header styling */
+.resources h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 10px 5px 10px;
+  align-content: start;
+}
+
+.resources div > p {
+  padding: 3px;
+  font-size: 1em;
+}
+
+.resources img {
+  justify-items: center;
+  height: 150px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+
+/* Academic Development */
+/* main div also for basic needs */
+#main div > p  {
+  /* margin: 20px; */
+  padding: 0 10% 0 10%;
+  margin-bottom: 5%;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.ac > img:first-of-type {
+  width: cover;
+}
+
+.ac_header p {
+  font-size: 30px;
+}
+
+/* used ChatGPT to rename all my HTML classes for separate pages when needed and consolidate the structure (got rid of extra redundant divs to make the content better fit with flex */
+.intro_ac {
+  position: relative;
+  display: block;
+  height: 40vw;
+  overflow: hidden;
+}
+
+/* fix overflow issue */
+.intro_ac > p {
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 30vw;
+  top: 50%;
+  left: 50%;
+  overflow: scroll;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  background-color: #525252;
+}
+
+.intro_ac img {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  opacity: 0.5;
+  overflow: scroll;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container_ac, .container_pro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1vw;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.boxes_ac, .boxes_pro {
+  padding-left: 5%;
+  text-align: center;
+  align-items: stretch;
+}
+
+.boxes_ac p, .boxes_pro ul {
+  font-size: 1.2em;
+}
+
+#main h3 {
+  padding-top: 0%;
+  padding-bottom: 3%;
+  font-size: 1.3em;
+}
+
+.boxes_ac a {
+  padding-top: 5%;
+  color: white;
+  font-weight: bold;
+}
+
+.boxes_ac a, .boxes_pro a {
+  color: white;
+  font-weight: bold;
+}
+
+.container_ac h2, .container_pro h2 {
+  grid-column: 1 / span 2;
+  text-align: center;
+  align-items: stretch;
+  border: 2px solid #FFCB05;
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.image-column figcaption {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* personal wellbeing */
+
+.resource_section > p:first-child {
+  margin: 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+  margin: 10px 20px 20px 20px;
+}
+
+#well_body h2 {
+  padding: 2%;
+  font-size: 30px;
+}
+
+.box {
+  flex: 1 1 250px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  border: 3px solid #FFCB05;
+  color:#00274C;
+}
+
+.box h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px;
+  /* padding: 5%; */
+}
+
+.box figcaption {
+  font-size: 14px;
+  text-align: center;
+}
+
+.box img {
+  background-size: cover;
+  align-items: center;
+  width: 100%;
+  border-radius: 5%;
+  height: fit-content;
+  object-fit: cover;
+}
+
+.resource_section > p:first-child {
+  margin: 25px;
+}
+
+/* wellbeing */
+#basic_intro {
+  padding: 0 10% 0 10%;
+  text-align: center;
+}
+
+#basic_intro img {
+  display: block;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 5%;
+}
+
+#support {
+  padding: 5% 0 0 0;
+}
+
+#support a {
+  color: white;
+  font-weight: bold;
+}
+
+.basic_container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+  gap: 20px;
+  margin: 10px 20px 20px 20px;
+}
+
+#main h2 {
+  align-self: center;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.basic_box {
+  flex: 1 1 30%;
+  padding: 5px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  gap: 10px;
+  border: 3px solid #FFCB05;
+  color:#00274C;
+}
+
+.basic_box h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  align-content: start;
+}
+
+.basic_box img {
+  height: 150px;
+  width: auto;
+  border-radius: 5%;
+  margin-top: 5%;
+  justify-items: end;
+  bottom: 0;
+}
+
+/* footer */
+
+footer {
+  display: block;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #FFCB05;
+  padding: 12px;
+  font-size: 1.3em;
+  z-index: -1;
+}
+
+footer > img {
+  align-content: start;
+  /* make sure the img stays on top of footer background because it's transparent */
+  z-index: 1;
+}
+
+footer p {
+  color: #00274C;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  text-align: center;
+  justify-content: center;
+}
+
+footer a {
+  color: #00274C;
+}
+
+/* Media query For larger screens over 700px */
+@media (min-width: 700px) {
+
+  /* header */
+  header {
+    background-size: cover;
+    font-size: 1.5em;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    padding-bottom: 4%;
+  }
+
+    /* increase button link sizes (index and wellbeing pages) */
+    .button {
+      font-size: 1.1rem;
+      transition: transform 0.3s ease;
+  }
+
+
+/* index main sources page */
+  .resources {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      transition: transform 0.3s ease;
+      margin: 0 1% 0 1%;
+  }
+
+  .resources > div {
+      position: relative;
+      width: 95%;
+      /* create padding under resource div containers */
+      margin: 0 0 5% 0;
+  }
+
+  .resources img {
+      width: 90%;
+      margin: 4%;
+      height: auto;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+  }
+
+  .resources div:hover img {
+      transform: scale(1.05);
+  }
+
+/* increase h2 & h3 header sizes  */
+  #main h2 {
+    font-size: 2em;
+    margin: 2% 5% 1% 5%;
+  }
+
+  #main h3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: auto;
+  }
+
+/* academic resources header image and text  */
+  #main div > p  {
+    padding: 1% 2% 1% 2%;
+    font-size: 1.6em;
+    text-align: center;
+    height: auto;
+  }
+
+  .intro_ac {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .intro_ac > p {
+    position: absolute;
+    display: block;
+    padding: 5% 0 5% 0;
+    margin: auto;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #525252;
+    box-sizing: border-box;
+    overflow: scroll;
+  }
+
+  .intro_ac img {
+    width: 100%;
+    /* use em to make sure the image stays consistent size in background compared to text (not vw) */
+    height: 25em;
+    top: 50%;
+    left: 50%;
+    opacity: 0.5;
+    overflow: scroll;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  /* add overarching flex container to place div classes side by side in large screen view */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* academic containers -- make side by side in flex  */
+  .container_ac, .container_pro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+      /* container take up most of the width of page but not all */
+    flex: 1 1 48%;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  /* could I have done this a better way with selectors? */
+  #main .container_ac h2, #main .container_pro h2 {
+    margin: 7% 0 0 0;
+  }
+
+  /* add the fade-in overlay effect to images per W3schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade 
+  didn't want to add another */
+  .boxes_ac, .boxes_pro {
+    font-size: 1.1rem;
+    padding-left: 5%;
+    text-align: center;
+    /* get the div text over the imgs */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* z index needs to be 3 to get it over the image and overlay layers */
+    z-index: 3;
+    opacity: 0;
+    transition: 0.3s ease;
+    /* make sure this goes to the background */
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  /* position the text over the imgs */
+    /* make relative to get the text on top (like the intro ac image background) */
+  .image-column {
+    position: relative;
+    margin: 5% 5% 0 5%;
+    align-items: center;
+  }
+
+  .image-column img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+
+.image-column::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* had to look this up to make it semi-transparent */
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  border-radius: 5%;
+  /* z index 2 to go behind text */
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+/* add the semitransparent overlay to initiate on hover */
+.image-column:hover::after {
+  opacity: 1;
+}
+
+/* Make the text visible (both boxes on respective images) on hover */
+.image-column:hover .boxes_ac, .image-column:hover .boxes_pro {
+  opacity: 1;
+}
+
+/* basic needs */
+
+#basic_intro {
+  padding: 0 3% 0 3%;
+}
+/* correct the sizing for the intro section */
+#basic_intro img {
+  height: 35vw;
+  width: auto;
+  margin: auto;
+}
+
+/* basic needs carousel */
+/* Set the basic container to allow horizontal scrolling. Inspiration and templates built from: https://www.w3schools.com/cssref/css_pr_scroll-snap-type.php
+https://www.w3schools.com/cssref/css_pr_scroll-snap-type.php */
+
+
+.basic_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4vw;
+  margin: 0 4% 0 4%;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: auto;
+  padding-bottom: 3%;
+  min-width: 90%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.basic_box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 17vw;
+  min-width: 300px;
+  align-items: center;
+  border-width: 7px;
+  /* https://www.w3schools.com/cssref/css_pr_scroll-snap-align.php */
+  scroll-snap-align: start;
+  scroll-margin: 1vw;
+}
+
+.basic_box:hover {
+  background-color: #FFCB05;
+  z-index: 1;
+}
+
+div.basic_box img {
+  margin-top: auto;
+  height: 15vw;
+  width: 15vw;
+  object-fit: contain;
+}
+
+/* /* Style scroll bar, thumb, and track it sits on -- borrowed inspiration/template from scrollbar styling https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+.basic_container::-webkit-scrollbar {
+  height: 15px;
+  margin-bottom: 3%;
+}
+
+.basic_container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.basic_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+}
