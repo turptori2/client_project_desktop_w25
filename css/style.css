@@ -436,9 +436,23 @@ footer a {
     display: block;
     position: relative;
     width: 100%;
-    height: 150px;
+    height: 175px;
     background-color: white;
-    padding-bottom: 10%;
+    padding-bottom: 5%
+  }
+
+  nav > ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px;
+    text-align: center;
+    column-gap: 10px;
+    align-content: space-between;
+    align-items: start;
+    justify-content: center;
+    /* make sure image on Ac Dev page doesn't overlap */
+    z-index: 2;
+    position: relative;
   }
 
     /* increase button link sizes (index and wellbeing pages) */
