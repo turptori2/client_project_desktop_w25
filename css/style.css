@@ -412,6 +412,21 @@ footer a {
   color: #00274C;
 }
 
+/* 404 page */
+#error p  {
+  /* margin: 20px; */
+  padding: 0 10% 0 10%;
+  margin-bottom: 5%;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#error a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
 /* Media query For larger screens over 700px */
 @media (min-width: 700px) {
 
